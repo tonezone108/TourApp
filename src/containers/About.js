@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import Home from "../components/Home";
+import About from "../components/About";
 // import {login, signUp} from "../redux/actions"; IMPORT FUTURE ACTIONS HERE
 
 // const mapStateToProps = state => {
@@ -9,15 +9,12 @@ import Home from "../components/Home";
 //   };
 //   };
 
-
-const mapStateToProps = (state) => {
-  const { user } = state;
-  const { testProp} = state;
+const mapStateToProps = state => {
   return {
-      user,
-      testProp
-  }
-}
+    user: state.user,
+    testProp: state.testProp,
+  };
+  };
   
 
 // const mapDispatchToProps = (dispatch) => { DISPATCH FUTURE ACTIONS HERE
@@ -27,4 +24,4 @@ const mapStateToProps = (state) => {
 //     };
 // }
 
-export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProps)(About);

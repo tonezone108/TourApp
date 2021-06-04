@@ -3,7 +3,7 @@ import { Switch, Route, Redirect } from "react-router";
 import cookie from "cookie";
 import Home from "./containers/Home";
 import Login from "./containers/Login";
-import About from "./components/About";
+import About from "./containers/About";
 import Links from "./components/Links";
 import TourInfo from "./components/TourInfo";
 import CheckOut from "./components/CheckOut"

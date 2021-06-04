@@ -3,8 +3,20 @@ import { AppBar, Toolbar, IconButton, Typography } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import { Link } from "react-router-dom";
 import {Button} from "@material-ui/core";
+import {Component} from 'react'
 
-const Navigation = () => {
+class Navigation extends Component {
+  state = {
+    username: this.props.user.username,
+    testProp: this.props.testProp
+  };
+
+componentDidMount() {
+    console.log(this.props.testProp)
+    console.log(this.props.user.username)
+  };
+
+  render() {
   return (
     // <AppBar position="relative">
     //   <Toolbar>
@@ -40,12 +52,28 @@ const Navigation = () => {
                Logout
                </Button>
               </a>
+              <a href="/About"  onClick={() => {
+               window.location.replace("/About");
+               }}>
+              <Button>
+               About
+               </Button>
+              </a>
+              <a href="/TourInfo"  onClick={() => {
+               window.location.replace("/TourInfo");
+               }}>
+              <Button>
+               TourInfo
+               </Button>
+              </a>
               <a href="https://github.com/tonezone108/Login-App">
                 <Button>GITHUB</Button>
-              </a>             
+              </a>    
+              {this.props.user.username}
               </div>
             </AppBar>
   );
 };
+}
 
 export default Navigation;
