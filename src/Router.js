@@ -39,13 +39,13 @@ const Router = () => {
   return (
     <Switch>
       <Route path="/login" component={Login} />
-      <ProtectedRoute exact path="/" component={Home} />
-      <ProtectedRoute exact path="/About" component={About} />
-      <ProtectedRoute exact path="/Links" component={Links} />
-      <ProtectedRoute exact path="/TourInfo" component={TourInfo} />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/About" component={About} />
+      <Route exact path="/Links" component={Links} />
+      <Route exact path="/TourInfo" component={TourInfo} />
       <ProtectedRoute exact path="/CheckOut" component={CheckOut} />
-      <ProtectedRoute exact path="/TourMenuENG" component={TourMenuENG} />
-      <ProtectedRoute exact path="/TourMenuITA" component={TourMenuITA} />
+      <Route exact path="/TourMenuENG" component={TourMenuENG} />
+      <Route exact path="/TourMenuITA" component={TourMenuITA} />
     </Switch>
   );
 };
