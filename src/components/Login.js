@@ -79,7 +79,7 @@ class Login extends Component {
 
     const { redirect } = this.state;
     if (redirect) {
-      return <Redirect to="/" />;
+      return <Redirect to="/Checkout" />;
     }
     return (
       <div className="App">

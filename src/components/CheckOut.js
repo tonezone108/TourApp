@@ -3,6 +3,16 @@ import React, {Component} from 'react'
 
 class CheckOut extends Component {
 
+      state = {
+    username: this.props.user.username,
+    testProp: this.props.testProp
+  };
+
+  componentDidMount() {
+    console.log(this.props.testProp)
+    console.log(this.props.user.username)
+  };
+
 
     render() {
         return (

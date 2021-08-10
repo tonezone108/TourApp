@@ -6,7 +6,7 @@ import Login from "./containers/Login";
 import About from "./containers/About";
 import Links from "./components/Links";
 import TourInfo from "./components/TourInfo";
-import CheckOut from "./components/CheckOut"
+import CheckOut from "./containers/CheckOut"
 import TourMenuENG from "./components/TourMenuENG"
 import TourMenuITA from "./components/TourMenuITA"
 

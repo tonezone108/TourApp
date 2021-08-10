@@ -1,23 +1,23 @@
 import { connect } from "react-redux";
-import Home from "../components/Home";
+import CheckOut from "../components/CheckOut";
 // import {login, signUp} from "../redux/actions"; IMPORT FUTURE ACTIONS HERE
 
- const mapStateToProps = (state) => {
-  return {
-    user: state.user,
-    testProp: state.testProp,
-  };
-  };
-
-
-// const mapStateToProps = (state) => {
-//   const { user } = state;
-//   const { testProp} = state;
+// const mapStateToProps = state => {
 //   return {
-//       user,
-//       testProp
-//   }
-// }
+//     user: state.user,
+//     testProp: state.testProp,
+//   };
+//   };
+
+
+const mapStateToProps = (state) => {
+  const { user } = state;
+  const { testProp} = state;
+  return {
+      user,
+      testProp
+  }
+}
   
 
 // const mapDispatchToProps = (dispatch) => { DISPATCH FUTURE ACTIONS HERE
@@ -27,4 +27,4 @@ import Home from "../components/Home";
 //     };
 // }
 
-export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProps)(CheckOut);

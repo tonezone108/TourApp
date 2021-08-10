@@ -6,15 +6,15 @@ import { Button } from "@material-ui/core";
 import { Component } from 'react'
 
 class Navigation extends Component {
-  state = {
-    username: this.props.user.username,
-    testProp: this.props.testProp
-  };
+  // state = {
+  //   username: this.props.user.username,
+  //   testProp: this.props.testProp
+  // };
 
-  componentDidMount() {
-    console.log(this.props.testProp)
-    console.log(this.props.user.username)
-  };
+  // componentDidMount() {
+  //   console.log(this.props.testProp)
+  //   console.log(this.props.user.username)
+  // };
 
   render() {
     return (
